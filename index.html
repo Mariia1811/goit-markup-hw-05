@@ -52,7 +52,15 @@
         <section class=" section hero">
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-                <button type="button" class="btn">Замовити послугу</button>
+                <button type="button" class="btn" data-modal-open>Замовити послугу</button>
+                <div class="backdrop is-hidden" data-modal>
+                    <div class="modal">
+                        <button class="modal-btn-close" data-modal-close>
+                            <svg class="icon-close">
+                                <use href="./images/icons.svg#icon-close-black"></use>
+                            </svg>
+                        </button>
+                    </div>
                 </div>
         </section>
         
@@ -100,13 +108,30 @@
                 </ul>
             </div>
         </section>
+
+        <!-- Галерея -->
         <section class="section gallery-section">
             <div class=" container">
                 <h2 class="title-section">Чим ми займаємося</h2>
-                <ul class="gallery list">
-                 <li class="gallery-item"> <img src="images/box1.jpg" alt="Розробка сайтів" width="370"> </li>
-                 <li class="gallery-item"> <img src="images/box2.jpg" alt="Розробка мобільних додатків" width="370"> </li>
-                 <li class="gallery-item"> <img src="images/box3.jpg" alt="Web дизайн" width="370"> </li> 
+                <ul class="gallery">
+                 <li class="gallery-item">
+                    <img src="images/box1.jpg" alt="Десктопний додаток" width="370">
+                    <div class="gallery-descr">
+                        <p class="gallery-text">Десктопні додатки</p>
+                    </div>
+                </li>
+                 <li class="gallery-item">
+                    <img src="images/box2.jpg" alt="Мобільний додаток" width="370">
+                    <div class="gallery-descr">
+                        <p class="gallery-text">Мобільні додатки</p>
+                    </div>
+                </li>
+                <li class="gallery-item"> 
+                    <img src="images/box3.jpg" alt="Дизайнерське рішення" width="370"> 
+                    <div class="gallery-descr">
+                        <p class="gallery-text">Дизайнерські рішення</p>
+                    </div>
+                </li> 
                 </ul>
             </div>
         </section>
@@ -374,7 +399,6 @@
         </div>
     </footer>
     
-    <script src="./js/modal.js"></script>
-
+<script src="./js/modal.js"></script>
 </body>
 </html>
