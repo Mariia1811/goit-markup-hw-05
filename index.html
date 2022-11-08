@@ -9,24 +9,25 @@
     <link rel="stylesheet" href="./css/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
     <!--Шапка сайту-->
     <header class="header">
         <div class="container header-field">
             <nav class="header-field"> 
-              <div class="header-logo"> <a class="logo" href="./index.html"><span class="logo-web">Web</span>Studio</a>
+              <div class="header-logo"> <a class="logo" href="./index.html"><span>Web</span>Studio</a>
               </div>
-                <ul class="page-nav list">
+                <ul class="page-nav">
                     <li class="page-nav-item"> <a href="./index.html" class="page-nav-link current">Студія</a></li>
                     <li class="page-nav-item"> <a href="./portfolio.html" class="page-nav-link">Портфоліо</a></li>
-                    <li class="page-nav-item"> <a href="" class="page-nav-link" >Контакти</a></li>
+                    <li class="page-nav-item"> <a href="" class="page-nav-link">Контакти</a></li>
                 </ul>
             </nav>
 
             <div class="header-contacts">
                 <ul class="header-contacts-list">
                     <li class="header-contact-item"> 
-                        <a href="mailto:info@devstudio.com" class="contact">
+                        <a href="mailto:info@devstudio.com" class="page-nav-link">
                             <svg class="header-icon-mail">
                                 <use href="./images/icons.svg#icon-envelope" width="16" height="12"></use>
                             </svg>
@@ -34,7 +35,7 @@
                         </a>
                     </li>
                     <li class="header-contact-item">
-                        <a href="tel:+380961111111" class="contact">
+                        <a href="tel:+380961111111" class="page-nav-link">
                             <svg class="header-icon-tel">
                                 <use href="./images/icons.svg#icon-smartphone" width="10" height="16"></use>
                             </svg>
@@ -53,6 +54,7 @@
             <div class="container">
                 <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
                 <button type="button" class="btn" data-modal-open>Замовити послугу</button>
+                
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal">
                         <button class="modal-btn-close" data-modal-close>
@@ -113,24 +115,18 @@
         <section class="section gallery-section">
             <div class=" container">
                 <h2 class="title-section">Чим ми займаємося</h2>
-                <ul class="gallery">
+                <ul class="gallery-list">
                  <li class="gallery-item">
                     <img src="images/box1.jpg" alt="Десктопний додаток" width="370">
-                    <div class="gallery-descr">
-                        <p class="gallery-text">Десктопні додатки</p>
-                    </div>
+                    <p class="gallery-text">Десктопні додатки</p>
                 </li>
                  <li class="gallery-item">
                     <img src="images/box2.jpg" alt="Мобільний додаток" width="370">
-                    <div class="gallery-descr">
-                        <p class="gallery-text">Мобільні додатки</p>
-                    </div>
+                    <p class="gallery-text">Мобільні додатки</p>
                 </li>
                 <li class="gallery-item"> 
                     <img src="images/box3.jpg" alt="Дизайнерське рішення" width="370"> 
-                    <div class="gallery-descr">
-                        <p class="gallery-text">Дизайнерські рішення</p>
-                    </div>
+                    <p class="gallery-text">Дизайнерські рішення</p>
                 </li> 
                 </ul>
             </div>
@@ -147,7 +143,7 @@
                             <h3 class="team-title">Ігор Дем'яненко</h3>
                             <p class="team-text">Product Designer</p>
                         
-                        <ul class="team-socials">
+                        <ul class="socials-list">
                             <li class="social-item">
                                 <a href="#"  class="social-link" target="_blank" rel="noopener noreferrer">
                                 <svg class="social-icon">
@@ -184,7 +180,7 @@
                         <div class="team-body">
                             <h3 class="team-title">Ольга Рєпіна</h3>
                             <p class="team-text">Frontend Developer</p>
-<ul class="team-socials">
+<ul class="socials-list">
     <li class="social-item">
         <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
             <svg class="social-icon">
@@ -220,7 +216,7 @@
                         <div class="team-body">
                             <h3 class="team-title">Микола Тарасов</h3>
                             <p class="team-text">Marketing</p>
-<ul class="team-socials">
+<ul class="socials-list">
     <li class="social-item">
         <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
             <svg class="social-icon">
@@ -256,7 +252,7 @@
                         <div class="team-body">
                             <h3 class="team-title">Михайло Єрмаков</h3>
                             <p class="team-text">UI Designer</p>
-<ul class="team-socials">
+<ul class="socials-list">
     <li class="social-item">
         <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
             <svg class="social-icon">
@@ -345,7 +341,7 @@
     
     <!--Підвал сайту-->
     <footer class="footer">
-        <div class="container footer-content">
+        <div class="container">
             <div class="footer-info">
                 <a class="logo logo-footer" href="./index.html"><span class="logo-web">Web</span>Studio</a>
                 <address>
@@ -365,7 +361,7 @@
                 <p>
                     приєднуйтесь
                 </p>
-                <ul class="team-socials">
+                <ul class="socials-list">
                     <li class="social-item">
                         <a href="#" class="social-link" target="_blank" rel="noopener noreferrer">
                             <svg class="social-icon">
