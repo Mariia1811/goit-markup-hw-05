@@ -6,7 +6,7 @@
    колір в хедер для контактів з прозорістю: rgba(255, 255, 255, 0.6);
    background-color footer:#2F303A;
    колір для заливки секції команди #F5F4FA;
-   колір риски під header #
+   колір риски під header #ECECEC
    рамка для портфоліо карток #EEEEEE
    колір для активної кнопки в hero #188CE8
    колір прозорості на картинки rgba(47, 48, 58, 0.4)
@@ -52,10 +52,6 @@ p{
     padding-bottom: 94px;
     text-align: center;
 }
-/* Риска під heder */
-.section:nth-child(1){
-    box-shadow: 0px -1px 0px 0px var(--color-header-bottom);
-}
 
 .section:nth-child(2n+4) {
     background-color: var(--color-section);
@@ -83,6 +79,9 @@ p{
 }
 
 /* header */
+.header{
+    border-bottom:1px solid var(--color-header-bottom);
+}
 
 .logo{
     font-family: Raleway, sans-serif;
@@ -110,7 +109,7 @@ p{
 
 .page-nav-link{
     padding-top: 32px;
-    padding-bottom: 32px;
+    padding-bottom: 31px;
 
     font-weight: 500;
     letter-spacing: 0.02em;
@@ -133,7 +132,7 @@ p{
 .current::after {
     content: "";
     position: absolute;
-    bottom: 0;
+    bottom: -1px;
     display: block;
     width: 100%;
     height: 4px;
@@ -142,13 +141,17 @@ p{
     background-color: var(--accent-color);
 }
 
-.page-nav,
-.header-contacts-list{
+.page-nav{
 display: flex;
-gap:50px;
+gap: 50px;
 }
 
-.header-contact-item .page-nav-link{
+.header-contacts-list {
+    display: flex;
+    gap: 30px;
+}
+
+.contact{
     color: var(--text-color);
     display: flex;
     min-width: 142px;
